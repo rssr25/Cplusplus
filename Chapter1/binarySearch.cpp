@@ -5,12 +5,13 @@ int binarySearch(int n, int* s, int x)
 {
 	int low, high, mid;
 	low = 0;
-	high = n-1;
+	high = n;
 	int location = 0;
 
 	while(low <= high && location == 0)
 	{
 		mid = (low + high)/2;
+		cout << mid << endl;
 		if(x == s[mid])
 			location = mid;
 		else if(x < s[mid])
