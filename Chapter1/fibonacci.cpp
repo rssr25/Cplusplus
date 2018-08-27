@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int fib(int n)
+unsigned long long int fib(int n)
 {
 	if(n <= 1)
 		return n;
@@ -11,6 +11,6 @@ int fib(int n)
 
 int main(void)
 {
-	int n = 10;
-	cout << "The " <<n<<"th term of fibonacci sequence is "<<fib(10);
+	int n = 40;
+	cout << "The " <<n<<"th term of fibonacci sequence is "<<fib(40);
 }

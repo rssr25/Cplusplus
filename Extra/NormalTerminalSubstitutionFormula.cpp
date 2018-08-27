@@ -3,7 +3,7 @@
 #include<string.h>
 using namespace std;
 
-void normalSubstitution(string a)
+void simpleSubstitution(string a)
 {
 	string original = a;
 	string final = "00001111";
@@ -30,7 +30,7 @@ void normalSubstitution(string a)
 		}
 	}
 
-	cout << "Total substitions required for binary string " << a << " in Normal Substitution: " << count << "\n" << endl;
+	cout << "Total substitions required for binary string " << a << " in Simple Substitution: " << count << endl;
 }
 
 void terminalSubstitution(string a)
@@ -58,7 +58,7 @@ int main(void)
 {
 
 	string a = "10101010";
-	normalSubstitution(a);
+	simpleSubstitution(a);
 	terminalSubstitution(a);
 
 }
